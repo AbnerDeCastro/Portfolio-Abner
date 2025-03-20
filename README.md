@@ -56,6 +56,6 @@ Este é o código-fonte do portfólio online de Abner De Castro Benedito, um des
 ## Contato
 
 - GitHub: [github.com/abner](https://github.com/abner)
-- LinkedIn: [linkedin.com/in/abner](https://linkedin.com/in/abner)
+- LinkedIn: [linkedin.com/in/abner]([https://linkedin.com/in/abner](https://www.linkedin.com/in/abner-castro-6380021ba/))
 
 &copy; 2025 Abner De Castro Benedito. Todos os direitos reservados.
