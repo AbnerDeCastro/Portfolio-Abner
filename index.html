@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Abner</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        header.intro {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #f4f4f4;
+        }
+        .btn-portifolio, .contato form button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        .btn-portifolio:hover, .contato form button:hover {
+            background-color: #555;
+        }
+        .contato form input, .contato form textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+        .contato form input:focus, .contato form textarea:focus {
+            border-color: #333;
+        }
+        .sobre .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .c-photo, .c-descricao {
+            flex: 1;
+            min-width: 300px;
+            margin: 15px;
+        }
+        .c-photo {
+            text-align: left; /* Align the photo to the left */
+        }
+        .servicos-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+        }
+        .servico-item {
+            flex: 1;
+            min-width: 200px;
+            margin: 15px;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-radius: 8px;
+        }
+        .grid-projetos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+        }
+        .projeto {
+            flex: 1;
+            min-width: 200px;
+            margin: 15px;
+        }
+        .projeto img {
+            width: 100%; /* Ajuste o tamanho conforme necessário */
+            height: auto; /* Mantém a proporção da imagem */
+            max-width: 300px; /* Tamanho máximo para as imagens */
+        }
+        .contato form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .contato form label, .contato form input, .contato form textarea, .contato form button {
+            width: 100%;
+            max-width: 500px;
+            margin: 10px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #000000;
+        }
+        .redes-sociais a {
+            margin: 0 10px;
+        }
+        .c-photo img {
+            width: 150px; /* Ajuste o tamanho conforme necessário */
+            height: auto; /* Mantém a proporção da imagem */
+            display: block;
+            margin: 0 auto; /* Centraliza a imagem */
+        }
+    </style>
+</head>
+<body>
+    <header class="intro">
+        <div class="container">
+            <h1>Abner De Castro Benedito</h1>
+            <p>Desenvolvedor Front-End</p>
+            <a href="https://github.com/AbnerDeCastro" target="_blank" class="btn-portifolio">Veja Meu Portfólio</a> <!-- Link adicionado -->
+        </div>
+    </header>
+
+    <section class="sobre">
+        <div class="container">
+            <h2>Sobre Mim</h2>
+            <div class="row">
+                <div class="c-photo">
+                    <img src="./img/minha-foto.jpg" alt="Foto Abner">
+                </div>
+                <div class="c-descricao">
+                    <p>Meu nome é Abner De Castro Benedito, tenho 24 anos e sou apaixonado por tecnologia.</p>
+                    <p>Estou me formando em Análise e Desenvolvimento de Sistemas e busco oportunidades para aplicar e aprimorar meus conhecimentos.</p>
+                    <h3>Habilidades</h3>
+                    <ul class="skills">
+                        <li><i class="fab fa-html5"></i> HTML - 80%</li>
+                        <li><i class="fab fa-css3-alt"></i> CSS - 70%</li>
+                        <li><i class="fab fa-js"></i> JavaScript - 75%</li>
+                        <li><i class="fab fa-react"></i> React - 65%</li>
+                        <li><i class="fab fa-node-js"></i> Node.js - 60%</li>
+                        <li><i class="fab fa-git-alt"></i> Git - 85%</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="servicos">
+        <div class="container">
+            <h2>Serviços</h2>
+            <div class="servicos-container">
+                <div class="servico-item">
+                    <!-- <p>01</p> -->
+                    <h3><i class="fas fa-paint-brush"></i> UI e UX</h3> <!-- Ícone de UI e UX adicionado -->
+                </div>
+                <div class="servico-item">
+                    <!-- <p>02</p> -->
+                    <h3><i class="fas fa-code"></i> Programação</h3> <!-- Ícone de programação adicionado -->
+                </div>
+                <div class="servico-item">
+                    <!-- <p>03</p> -->
+                    <h3><i class="fab fa-wordpress"></i> WordPress</h3> <!-- Ícone de WordPress adicionado -->
+                </div>
+                <div class="servico-item">
+                    <!-- <p>04</p> -->
+                    <h3><i class="fas fa-network-wired"></i> Infraestrutura</h3> <!-- Ícone de infraestrutura adicionado -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio">
+        <div class="container">
+            <h2>Portfólio</h2>
+            <div class="owl-carousel owl-theme">
+                <div class="projeto">
+                    <img src="./img/projeto1.jpg" alt="Projeto 1">
+                    <!-- <p>Projeto 01</p> -->
+                </div>
+                <div class="projeto">
+                    <img src="./img/projeto2.jpg" alt="Projeto 2">
+                    <!-- <p>Projeto 02<p>-->
+                </div>
+                <div class="projeto">
+                    <img src="./img/projeto3.jpg" alt="Projeto 3">
+                    <!-- <p>Projeto 03<p>-->
+                </div>
+                <div class="projeto">
+                    <img src="./img/projeto4.jpg" alt="Projeto 4">
+                    <!-- <p>Projeto 03<p>-->
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contato">
+        <div class="container">
+            <h2>Contato</h2>
+            <form>
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Seu melhor e-mail" required>
+                
+                <label for="whatsapp">WhatsApp</label> <!-- Campo de WhatsApp adicionado -->
+                <input type="tel" id="whatsapp" name="whatsapp" placeholder="Seu número de WhatsApp" required>
+                
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem"></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Abner De Castro Benedito. Todos os direitos reservados.</p>
+        <div class="redes-sociais">
+            <a href="https://github.com/AbnerDeCastro" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
